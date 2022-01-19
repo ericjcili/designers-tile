@@ -159,56 +159,6 @@
   margin-bottom: -70px;
 }
 
-.read-more-state {
-  display: none;
-}
-
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Read More...';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Close';
-}
-
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 .5em;
-  color: #666;
-  font-size: .9em;
-  text-align: center;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-  margin-bottom: 30px;
-}
-.read-more-trigger2 {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 .5em;
-  color: #666;
-  font-size: .9em;
-  text-align: center;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-  margin-bottom: 100px;
-}
- 
  .btn-main, .btn-small, .btn-transparent {
    background: #655E7A;
    color: #fff;
@@ -421,12 +371,27 @@
  .cus-review {
    margin-bottom: -100px;
    padding-top: 70px;
-   padding-left: 50px;
-   padding-right: 30px;
+   padding-left: 60px;
+   padding-right: 60px;
    padding-bottom: 30px;
+ }
+ .contact-frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  margin-top: -30px;
+
+}
+.contact-us {
+  background-color: black;
+}
+ .test-btm {
+   margin-top: 130px;
  }
   .cus-review img {
     border-radius: 180px;
+    margin-top: 15px;
   }
   .reviews {
     margin-top: -100px;
@@ -797,6 +762,10 @@
    object-fit: cover;
  }
 
+ .user-info {
+   margin-top: 10px;
+   margin-bottom: -15px;
+ }
  .vendor-image-grid {
   --gap: 16px;
   --num-cols: 8;
@@ -1723,6 +1692,7 @@
  
  .google-map {
    position: relative;
+   padding-top: 40px;
  }
  
  .google-map .map {
