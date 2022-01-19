@@ -78,9 +78,10 @@
                     <p>⭐⭐⭐⭐⭐ 01/13/2022</p>
                 </div>
             </div>
-            <input type="checkbox" class="read-more-state" id="post-1" />
-            <p class="read-more-wrap">It is always a pleasure working with the Designers Tile team. As a local interior designer, it is hard to find reputable, trustworthy tile houses in Miami that not only stand... <span class="read-more-target">behind their product, but go the extra mile to ensure both the designer and client experience is productive, creative, and enriching. Designers Tile is our firm's one stop shop for everything from classic subway tile, to innovative and unique products that are new to the market. Eric and Rhett are experts and take the time to know the intricacies of each and every one of their products. We love working with Designers Tile, and you will too!</span></p>
-            <label for="post-1" class="read-more-trigger"></label>
+            <p>It is always a pleasure working with the Designers Tile team. As a local interior designer, it is hard to find reputable, trustworthy tile houses in Miami that not only stand<span id="text">">behind their product, but go the extra mile to ensure both the designer and client experience is productive, creative, and enriching. Designers Tile is our firm's one stop shop for everything from classic subway tile, to innovative and unique products that are new to the market. Eric and Rhett are experts and take the time to know the intricacies of each and every one of their products. We love working with Designers Tile, and you will too!</span></p>
+            <div class="btn-containter">
+            <button id="toggle">Read more...</button>
+          </div>
           </div>
         <div class="col-md-4 text-left cus-review">
             <div class="review-user">
@@ -110,9 +111,7 @@
                     <p>⭐⭐⭐⭐⭐ 05/07/2021</p>
                 </div>
             </div>
-            <input type="checkbox" class="read-more-state" id="post-2" />
-            <p class="read-more-wrap">We're currently doing a complete remodel on our house in the US Virgin Islands and I've been working with Eric at Designers Tile for all our tile needs... <span class="read-more-target">I've made two trips so far to their showroom in Coral Gables where selecting tile is so easy due to their expansive displays. Eric is incredibly knowledgeable, easy to work with, and he clearly loves what he does which makes what could be a daunting experience really enjoyable! He goes above and beyond to ensure you find the perfect tile for your project, offering excellent advice and customer service. I've already purchased and shipped interior floor tile and it was seamless, and am currently finalizing the tile for our exterior pool and patio areas (which Eric suggested and it was perfect!), as well as additional tile for bedrooms and bathrooms. If you're looking for a one-stop shop with excellent selections, knowledgeable and friendly staff and great customer service, I highly recommend Designers Tile in Coral Gables, Florida!</span></p>
-            <label for="post-2" class="read-more-trigger"></label>
+            <p>We're currently doing a complete remodel on our house in the US Virgin Islands and I've been working with Eric at Designers Tile for all our tile needs... <span>We've made two trips so far to their showroom in Coral Gables where selecting tile is so easy due to their expansive displays. Eric is incredibly knowledgeable, easy to work with, and he clearly loves what he does which makes what could be a daunting experience really enjoyable! He goes above and beyond to ensure you find the perfect tile for your project, offering excellent advice and customer service. I've already purchased and shipped interior floor tile and it was seamless, and am currently finalizing the tile for our exterior pool and patio areas (which Eric suggested and it was perfect!), as well as additional tile for bedrooms and bathrooms. If you're looking for a one-stop shop with excellent selections, knowledgeable and friendly staff and great customer service, I highly recommend Designers Tile in Coral Gables, Florida!</span></p>
           </div>
           <div class="col-md-4 text-left cus-review">
             <div class="review-user">
@@ -177,5 +176,22 @@
         <script src="plugins/google-map/map.js"></script>
     
         <script src="js/script.js"></script>
+        <script src="js/read-more.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+    $("#toggle").click(function() {
+    var elem = $("#toggle").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle").text("Read Less");
+      $("#text").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle").text("Read More");
+      $("#text").slideUp();
+    }
+  });
+});
+        </script>
       </section>
 </body>

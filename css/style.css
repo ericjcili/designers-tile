@@ -159,55 +159,6 @@
   margin-bottom: -70px;
 }
 
-.read-more-state {
-  display: none;
-}
-
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Read More...';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Close';
-}
-
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 .5em;
-  color: #666;
-  font-size: .9em;
-  text-align: center;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-  margin-bottom: 30px;
-}
-.read-more-trigger2 {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 .5em;
-  color: #666;
-  font-size: .9em;
-  text-align: center;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-  margin-bottom: 100px;
-}
  
  .btn-main, .btn-small, .btn-transparent {
    background: #655E7A;
@@ -427,6 +378,29 @@
  }
   .cus-review img {
     border-radius: 180px;
+  }
+  .cus-review #text {
+    display: none;
+  }
+  .cus-review button {
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color:white;
+  font-family:cursive;
+  box-sizing:border-box;
+  }
+  .cus-review .btn-container{
+    margin: auto;
+    height:44px;
+    width:166.23px;
+    
   }
   .reviews {
     margin-top: -100px;
