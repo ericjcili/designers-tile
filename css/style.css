@@ -344,6 +344,12 @@
   border-width: 2px;
  }
 
+ .section-titleCU {
+  margin-bottom: 70px;
+  margin-top: 20px;
+  border-top: bottom rgba(0, 0, 0, 0.429);
+ border-width: 2px;
+}
 
  .section-title h2 {
    text-transform: uppercase;
@@ -367,6 +373,28 @@
      border-width: 2px;
    border-bottom-style: solid;
  }
+ .section-titleCU h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.section1-titleCU p {
+ font-style: italic;
+ color: #666;
+ font-family: "Volkhov", serif;
+}
+.section-titleCU p {
+  font-style: italic;
+  color: #666;
+  font-family: "Volkhov", serif;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 30px;   
+  border-bottom: #666;
+    border-width: 2px;
+  border-bottom-style: solid;
+}
 
  .cus-review {
    margin-bottom: -100px;
@@ -1362,6 +1390,9 @@
  @media (max-width: 480px) {
    .service-arrow .block {
      padding: 60px 10px;
+   }
+   .section-titleCU {
+     margin-left: 22px;
    }
  }
  .service-arrow .block i {
